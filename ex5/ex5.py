@@ -27,3 +27,5 @@ nb.fit(x_train, y_train)
 y_pred = nb.predict(x_test)
 #Check performance of model
 print(accuracy_score(y_test, y_pred))
+from sklearn.metrics import classification_report
+print(classification_report(y_test,y_pred))
